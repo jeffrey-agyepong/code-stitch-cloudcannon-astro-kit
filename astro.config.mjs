@@ -6,7 +6,7 @@ import mdx from '@astrojs/mdx';
 import alpine from '@astrojs/alpinejs';
 
 export default defineConfig({
-    site:'',
+    site:'https://talented-plant.cloudvent.net/',
     integrations:[
         react(),
         tailwind(),
