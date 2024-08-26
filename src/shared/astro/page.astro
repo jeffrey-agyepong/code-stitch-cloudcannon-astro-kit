@@ -1,6 +1,6 @@
 ---
-export interface Props{
-    contentBlocks: any[];
+export interface Props {
+  contentBlocks: any[];
 }
 
 const components: Record<string, Function> = {};
@@ -20,10 +20,10 @@ const { contentBlocks } = Astro.props;
 ---
 
 <main>
-    {
-        contentBlocks.map((block, i)=>{
-            const Component = components[block._booksop_name];
-            return <Component {...block} key={i} />
-        })
-    }
+  {
+    contentBlocks.map((block, i) => {
+      const Component = components[block._bookshop_name];
+      return <Component {...block} key={i} />;
+    })
+  }
 </main>
