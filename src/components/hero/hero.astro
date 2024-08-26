@@ -78,14 +78,14 @@ const backgroundImageSrc = getImageUrl(block.background_image.image_path);
     <picture class="cs-picture">
       <source
         media="(max-width: 600px)"
-        srcset="/assets/images/landing-m.webp"
+        srcset={backgroundImageSrc}
       />
-      <source media="(min-width: 601px)" srcset="/assets/images/landing.jpg" />
+      <source media="(min-width: 601px)" srcset={backgroundImageSrc} />
       <img
         aria-hidden="true"
         decoding="async"
-        src="/assets/images/landing.jpg"
-        alt="new home"
+        src={backgroundImageSrc}
+        alt={block.background_image.alt_text}
         width="2500"
         height="1667"
         loading="eager"
