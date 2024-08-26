@@ -30,136 +30,136 @@
   </picture>
 </section>
 
-<style lang="less">
+<style lang="css">
   
 /* Mobile */
 @media only screen and (min-width: 0em) {
   #cta {
-    padding: (50/16rem) 0;
+    padding: 3.125rem 0; /* 50/16rem */
     position: relative;
+  }
 
-    &:before {
-      content: "";
-      width: 100%;
-      height: 100%;
-      background: #000;
-      opacity: 0.7;
-      display: block;
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: -1;
-    }
+  #cta::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.7;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
 
-    .container {
-      text-align: center;
-    }
+  #cta .container {
+    text-align: center;
+  }
 
-    picture {
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: -2;
+  #cta picture {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2;
+  }
 
-      img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        position: absolute;
-        top: 0;
-        left: 0;
-      }
-    }
+  #cta picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
 
-    .title {
-      font-size: ~"min(9vw, 3rem)";
-      font-weight: 900;
-      line-height: 58/48;
-      text-align: center;
-      margin-bottom: (36/16rem);
-      color: #fff;
-      position: relative;
-    }
+  #cta .title {
+    font-size: min(9vw, 3rem);
+    font-weight: 900;
+    line-height: 1.2083; /* 58/48 */
+    text-align: center;
+    margin-bottom: 2.25rem; /* 36/16rem */
+    color: #fff;
+    position: relative;
+  }
 
-    p {
-      text-align: center;
-      width: 96%;
-      max-width: (598/16rem);
-      margin: auto;
-      margin-bottom: (36/16rem);
-      color: #fff;
-      opacity: 1;
-    }
+  #cta p {
+    text-align: center;
+    width: 96%;
+    max-width: 37.375rem; /* 598/16rem */
+    margin: auto;
+    margin-bottom: 2.25rem; /* 36/16rem */
+    color: #fff;
+    opacity: 1;
   }
 }
 
 /* Small Desktop */
 @media only screen and (min-width: 64em) {
   #cta {
-    padding: (168/16rem) 0;
+    padding: 10.5rem 0; /* 168/16rem */
   }
 }
 
 /* Large Desktop */
 @media only screen and (min-width: 1300px) {
   #cta {
-    margin-top: (100/16rem);
+    margin-top: 6.25rem; /* 100/16rem */
     position: relative;
-    &:before {
-      display: none;
-    }
-    &:after {
-      content: "";
-      width: (2000/16rem);
-      height: (1108/16rem);
-      background: url("/assets/svgs/cta-squares.svg");
-      background-position: center;
-      background-size: contain;
-      background-repeat: no-repeat;
-      opacity: 1;
-      display: block;
-      position: absolute;
-      bottom: 0;
-      left: 50%;
-      z-index: -3;
-      transform: translateX(-50%);
-    }
-    .container {
-      width: 90.0625%;
-      margin: auto;
-    }
+  }
 
-    picture {
-      width: 90.0625%;
-      left: 50%;
-      transform: translateX(-50%);
+  #cta::before {
+    display: none;
+  }
 
-      &:before {
-        content: "";
-        width: 100%;
-        height: 100%;
-        background: #000;
-        opacity: 0.7;
-        display: block;
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 1;
-      }
-    }
+  #cta::after {
+    content: "";
+    width: 125rem; /* 2000/16rem */
+    height: 69.25rem; /* 1108/16rem */
+    background: url("/assets/svgs/cta-squares.svg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 1;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    z-index: -3;
+    transform: translateX(-50%);
+  }
+
+  #cta .container {
+    width: 90.0625%;
+    margin: auto;
+  }
+
+  #cta picture {
+    width: 90.0625%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  #cta picture::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.7;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
   }
 }
 
 /* Dark Mode */
 @media only screen and (min-width: 0em) {
-  body.dark-mode {
-    #cta {
-      &:after {
-        display: none;
-      }
-    }
+  body.dark-mode #cta::after {
+    display: none;
   }
 }
+
 </style>
