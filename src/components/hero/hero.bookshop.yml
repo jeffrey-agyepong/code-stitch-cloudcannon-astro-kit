@@ -10,3 +10,75 @@ spec:
     - Image
     - Text
     - Buttons
+
+# Defines the structure of this component, as well as the default values
+blueprint:
+  background_image: 
+      image_path: 
+      type: 'image'
+      alt_text: An Image
+  heading:
+    heading_text: Astro Bookshop Starter
+    heading_color: '#3dc3dc'
+  subheading:
+    markdown_content: >-
+      A starting point for developers looking to build a website with Astro, using Bookshop components in CloudCannon. Create your own copy, and start creating your own components to use in the CloudCannon CMS.
+    color: '#393939'
+  buttons: 
+    - text:
+        type: 'text'
+        label: 'Button Text'
+      link:
+        type: 'url'
+        label: 'Button Link'
+      background_color:
+        type: 'color'
+        label: 'Button Background Color'
+      hover_brightness:
+        type: 'range'
+        label: 'Hover Brightness'
+        min: 0
+        max: 100
+      text_color:
+        type: 'color'
+        label: 'Button Text Color'
+
+# Overrides any fields in the blueprint when viewing this component in the component browser
+preview:
+
+# Any extra CloudCannon inputs configuration to apply to the blueprint
+_inputs:
+  heading:
+    options:
+      preview:
+        icon: 'short_text'
+        text:
+          - key: heading_text
+          - Heading
+        subtext:
+          - key: heading_color
+          - 'Update heading gradient color and text content.'
+  subheading:
+    options:
+      preview:
+        icon: 'short_text'
+        text:
+          - Subheading
+        subtext:
+          - 'Update subheading content and color.'
+  heading_color:
+      type: color
+      preview:
+        text:
+          - key: name
+          - 'Select a color for the heading text.'
+  background_image:
+    options:
+      preview:
+        icon: 'image'
+        text:
+          - key: alt_text
+          - 'Background Image'
+        subtext:
+          - key: image_path
+          - 'Update background image'
