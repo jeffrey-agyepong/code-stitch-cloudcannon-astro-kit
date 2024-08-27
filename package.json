@@ -15,7 +15,7 @@
     "@astrojs/mdx": "^2.2.4",
     "@astrojs/react": "^3.0.2",
     "@astrojs/tailwind": "^5.0.0",
-    "@bookshop/astro-bookshop": "3.10.0",
+    "@bookshop/astro-bookshop": "3.9.0",
     "@bookshop/live": "^3.10.0",
     "@fontsource-variable/exo": "^5.0.20",
     "@fontsource-variable/montserrat": "^5.0.20",
