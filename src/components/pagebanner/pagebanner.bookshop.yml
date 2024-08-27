@@ -1,0 +1,75 @@
+spec:
+  structures:
+    - content_blocks
+  label: Page Banner
+  description: Page Banner with Background Image & Breadcrumbs
+  icon: 'image'
+  tags:
+  - Banner
+  - Section
+
+blueprint:
+  title: "About Us"
+  breadcrumbs:
+    - label: "Home"
+      url: "/"
+      active: false
+    - label: "About Us"
+      url: "/about-us"
+      active: true
+  backgroundImage:
+    mobile:
+    desktop:
+
+_inputs:
+  title:
+    type: text
+    label: Title
+    options:
+      preview:
+        icon: 'short_text'
+        text:
+          - key: title
+          - Title
+        subtext:
+          - 'Update the banner title.'
+
+  breadcrumbs:
+    type: group
+    label: Breadcrumbs
+    options:
+      preview:
+        icon: 'label_important'
+        text:
+          - key: label
+          - Breadcrumb
+        subtext:
+          - 'Update the breadcrumbs.'
+    fields:
+      - type: text
+        label: Label
+        key: label
+      - type: text
+        label: URL
+        key: url
+      - type: checkbox
+        label: Active
+        key: active
+        
+  backgroundImage:
+    type: group
+    label: Background Image
+    options:
+      preview:
+        icon: 'image'
+        text:
+          - 'Image URLs'
+        subtext:
+          - 'Update the background image URLs.'
+    fields:
+      - type: image
+        label: Mobile Image
+        key: mobile
+      - type: image
+        label: Desktop Image
+        key: desktop

@@ -1,0 +1,326 @@
+---
+// CloudCannon variables to enable editing
+const contactTitle = "Contact Us";
+const contactSubtitle = "Get in Touch";
+const address = "Alberta, Canada";
+const workingHours = "Monday - Saturday: 10:00 - 20:00";
+const sundayHours = "Sunday: Closed";
+const contactNumber = "M: +99 40 70 929";
+const contactEmail = "E: info@stitchgym.com";
+---
+<section id="contact-1750">
+  <div class="cs-container">
+      <div class="cs-form-group">
+          <div class="cs-content">
+              <span class="cs-topper" cloudcannon-field="contactSubtitle">{contactSubtitle}</span>
+              <h2 class="cs-title" cloudcannon-field="contactTitle">{contactTitle}</h2>
+          </div>
+          <!-- Form -->
+          <form class="cs-form" id="cs-form-1750" name="Contact Form" method="post">
+              <label class="cs-label">
+                  Name *
+                  <input class="cs-input" required type="text" id="name-1750" name="name" placeholder="John Doe">
+              </label>
+              <label class="cs-label cs-email">
+                  Email *
+                  <input class="cs-input" required type="email" id="email-1750" name="email" placeholder="name@company.com">
+              </label>
+              <label class="cs-label cs-phone">
+                  Phone *
+                  <input class="cs-input" required type="phone" id="phone-1750" name="phone" placeholder="+1 (206) 987-6543">
+              </label>
+              <label class="cs-label">
+                  Message *
+                  <textarea class="cs-input cs-textarea" required name="Message" id="message-1750" placeholder="Hello, I am interested..."></textarea>
+              </label>
+              <button class="cs-button-solid cs-submit" type="submit">Send Message</button>
+          </form>
+      </div>
+      <!-- Contact Info -->
+      <div class="cs-info-group">
+          <div class="cs-info">
+              <span class="cs-topper">Location</span>
+              <span class="cs-detail" cloudcannon-field="address">{address}</span>
+          </div>
+          <div class="cs-info">
+              <span class="cs-topper">Working Hours</span>
+              <span class="cs-detail" cloudcannon-field="workingHours">{workingHours}</span>
+              <span class="cs-detail" cloudcannon-field="sundayHours">{sundayHours}</span>
+          </div>
+          <div class="cs-info">
+              <span class="cs-topper">Contact</span>
+              <span class="cs-detail" cloudcannon-field="contactNumber">{contactNumber}</span>
+              <span class="cs-detail" cloudcannon-field="contactEmail">{contactEmail}</span>
+          </div>
+      </div>
+  </div>
+
+  <div class="cs-picture-group">
+      <iframe class="cs-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9594355.534976289!2d-125.53804868860772!3d54.04940936476014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5309b282a82419b5%3A0xb0a9479a409b8e9e!2sAlberta!5e0!3m2!1sen!2sca!4v1722663097444!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+      <img class="cs-graphic cs-top cs-light" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/gym-hero-shape-top-light.svg" alt="graphic" height="161" width="1920" loading="lazy" decoding="async" >
+      <img class="cs-graphic cs-left cs-light" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/gym-hero-shape-top-light.svg" alt="graphic" height="161" width="1920" loading="lazy" decoding="async" >
+      <img class="cs-graphic cs-bottom cs-light" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/gym-hero-shape-top-light.svg" alt="graphic" height="161" width="1920" loading="lazy" decoding="async" >
+
+      <img class="cs-graphic cs-top cs-dark" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/gym-hero-shape-top-dark.svg" alt="graphic" height="161" width="1920" loading="lazy" decoding="async" >
+      <img class="cs-graphic cs-left cs-dark" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/gym-hero-shape-top-dark.svg" alt="graphic" height="161" width="1920" loading="lazy" decoding="async" >
+      <img class="cs-graphic cs-bottom cs-dark" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/gym-hero-shape-top-dark.svg" alt="graphic" height="161" width="1920" loading="lazy" decoding="async" >
+  </div>
+</section>
+
+<style>
+    /*-- -------------------------- -->
+  <---          Contact           -->
+  <--- -------------------------- -*/
+  
+  /* Mobile - 360px */
+  @media only screen and (min-width: 0rem) {
+    #contact-1750 {
+      padding: var(--sectionPadding);
+      overflow: hidden;
+      position: relative;
+      z-index: 1;
+    }
+    #contact-1750 .cs-container {
+      width: 100%;
+      /* changes to 1024 on desktop */
+      max-width: 44rem;
+      margin: auto;
+      background-color: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: stretch;
+      /* 48px - 64px */
+      gap: clamp(3rem, 5vw, 4rem);
+    }
+    #contact-1750 .cs-content {
+      /* set text align to center if content needs to be centrally aligned */
+      text-align: left;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      /* aligns content to the left, set to center to centrally align */
+      align-items: flex-start;
+    }
+    #contact-1750 .cs-form-group {
+      /* set text align to left if content needs to be left aligned */
+      text-align: center;
+      width: 100%;
+      /* resets to 0 at tablet */
+      margin: auto;
+      /* prevents padding and border from affecting height and width */
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      /* centers content horizontally, set to flex-start to left align */
+      align-items: center;
+    }
+    #contact-1750 .cs-title {
+      margin: 0 0 1.5rem;
+    }
+    #contact-1750 .cs-form {
+      width: 100%;
+      /* prevents flexbox from affecting height and width */
+      box-sizing: border-box;
+      padding: 0;
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 1rem;
+    }
+    #contact-1750 .cs-label {
+      font-size: 1rem;
+      font-weight: 700;
+      line-height: 1.2em;
+      color: var(--headerColor);
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      grid-column: span 12;
+      gap: 0.5rem;
+    }
+    #contact-1750 .cs-input {
+      font-size: 1rem;
+      width: 100%;
+      /* 46px - 56px */
+      height: clamp(2.875rem, 4.5vw, 3.5rem);
+      /* prevents padding from adding to height and width */
+      box-sizing: border-box;
+      padding: 0;
+      padding-left: 1.5rem;
+      background-color: #f7f7f7;
+      color: var(--headerColor);
+      border: none;
+    }
+    #contact-1750 .cs-input::placeholder {
+      color: var(--bodyTextColor);
+    }
+    #contact-1750 .cs-textarea {
+      font-family: inherit;
+      min-height: 7.5rem;
+      padding-top: 1.5rem;
+    }
+    #contact-1750 .cs-button-solid {
+      font-size: 1rem;
+      font-weight: 700;
+      /* 46px - 56px */
+      line-height: clamp(2.875em, 5.5vw, 3.5em);
+      text-align: center;
+      text-decoration: none;
+      min-width: 9.375rem;
+      margin: 0;
+      /* prevents padding from adding to the width */
+      box-sizing: border-box;
+      padding: 0 1.5rem;
+      background-color: var(--primary);
+      overflow: hidden;
+      color: #1a1a1a;
+      border: none;
+      display: inline-block;
+      position: relative;
+      z-index: 1;
+      transition: color 0.3s;
+    }
+    #contact-1750 .cs-button-solid:before {
+      content: "";
+      width: 0%;
+      height: 100%;
+      background: #000;
+      opacity: 1;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      transition: width 0.3s;
+    }
+    #contact-1750 .cs-button-solid:hover {
+      color: #fff;
+    }
+    #contact-1750 .cs-button-solid:hover:before {
+      width: 100%;
+    }
+    #contact-1750 .cs-submit {
+      margin: 1rem 0 0;
+      color: var(--bodyTextColorWhite);
+      grid-column: span 12;
+      justify-self: flex-start;
+    }
+    #contact-1750 .cs-submit:hover {
+      cursor: pointer;
+    }
+    #contact-1750 .cs-info-group {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+    #contact-1750 .cs-detail {
+      font-size: 1.25rem;
+      font-weight: 700;
+      line-height: 1.2em;
+      color: var(--bodyTextColor);
+      display: block;
+    }
+    #contact-1750 .cs-picture-group {
+      width: 110%;
+      height: 100vw;
+      /* removed at desktop */
+      max-height: 31.375rem;
+      margin-top: 3rem;
+      overflow: hidden;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    #contact-1750 .cs-iframe {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+    #contact-1750 .cs-graphic {
+      width: 100%;
+      min-width: 80rem;
+      height: auto;
+      object-fit: cover;
+      position: absolute;
+      left: 50%;
+      z-index: 0;
+      transform: translateX(-50%);
+    }
+    #contact-1750 .cs-top {
+      top: 0;
+    }
+    #contact-1750 .cs-left {
+      left: 4%;
+      transform: rotate(270deg);
+      transform-origin: left;
+    }
+    #contact-1750 .cs-bottom {
+      bottom: 0;
+      left: 0;
+      transform: rotateX(180deg);
+    }
+    #contact-1750 .cs-dark {
+      display: none;
+    }
+  }
+  /* Tablet - 768px */
+  @media only screen and (min-width: 48rem) {
+    #contact-1750 {
+      /* using flex: 1 on both group elements to ensure they're both the same width */
+    }
+    #contact-1750 .cs-container {
+      flex-direction: row;
+      align-items: center;
+    }
+    #contact-1750 .cs-form-group {
+      flex: 1;
+    }
+    #contact-1750 .cs-info-group {
+      flex: 1;
+    }
+  }
+  /* Desktop - 1024px */
+  @media only screen and (min-width: 64rem) {
+    #contact-1750 .cs-container {
+      width: 65%;
+      max-width: 64rem;
+      margin: 0 auto 0 0;
+      padding: 2.5rem 1.5rem;
+    }
+    #contact-1750 .cs-picture-group {
+      width: 90%;
+      height: 100%;
+      max-height: 100%;
+      margin: 0;
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: auto;
+      z-index: -1;
+      transform: none;
+    }
+    #contact-1750 .cs-picture-group {
+      margin-left: -12.75rem;
+      left: 50%;
+    }
+  }
+  /* Large Desktop - 1300px */
+  @media only screen and (min-width: 81.25rem) {
+    #contact-1750 .cs-label:nth-of-type(2),
+    #contact-1750 .cs-label:nth-of-type(3) {
+      grid-column: span 6;
+    }
+  }
+  /* Largest Desktop - 1920px */
+  @media only screen and (min-width: 120rem) {
+    #contact-1750 {
+      padding-top: 7vw;
+      padding-bottom: 9vw;
+    }
+    #contact-1750 .cs-container {
+      margin: 0 auto;
+      transform: translateX(-22rem);
+    }
+  }
+                                  
+  </style>

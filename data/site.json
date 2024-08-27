@@ -1,7 +1,7 @@
 {
-    "site_title": "",
-    "description": "",
-    "twitter_site": "",
-    "image": "",
-    "image_alt": "Astro logo"
-  }
+  "site_title": "Alberta Vision Care",
+  "description": "A starter template for Astro, built by Bookshop components - for CloudCannon CMS.",
+  "twitter_site": "",
+  "image": "/images/astro-logo-light-gradient.png",
+  "image_alt": "Astro logo"
+}

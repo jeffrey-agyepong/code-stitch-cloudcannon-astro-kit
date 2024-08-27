@@ -1,0 +1,52 @@
+spec:
+  structures:
+    - content_blocks
+  label: Partners Section
+  description: Section displaying partner logos with links
+  icon: 'business'
+  tags:
+    - Partners
+    - Logos
+    - Section
+
+blueprint:
+  title: "Our Partners"
+  partners:
+    - image: "@assets/Alberta-Collage-of-Optometrists.png"
+      alt: "Partner 1"
+      link: "#"
+    - image: "@assets/aao-logo.png"
+      alt: "Partner 2"
+      link: "#"
+    - image: "@assets/cao-logo.png"
+      alt: "Partner 3"
+      link: "#"
+
+preview:
+  # Add any preview configurations here if needed
+
+_inputs:
+  title:
+    options:
+      preview:
+        icon: 'short_text'
+        text:
+          - key: title
+          - Title
+        subtext:
+          - 'Update the section title.'
+  partners:
+    options:
+      preview:
+        icon: 'image'
+        text:
+          - 'Images'
+        subtext:
+          - 'Update partner images and links.'
+    gallery:
+      text:
+        - key: image
+        - 'Partner Image'
+      image:
+        - key: image
+      icon: 'image'

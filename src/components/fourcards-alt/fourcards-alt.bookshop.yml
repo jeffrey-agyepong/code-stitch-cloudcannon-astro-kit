@@ -1,0 +1,66 @@
+spec:
+  structures:
+    - content_blocks
+  label: Four Cards Section - Alt
+  description: Section with four cards
+  icon: 'business'
+  tags:
+  - Cards
+  - Section
+
+blueprint:
+  title: "Why Choose Us"
+  cards:
+    - image: '/path/to/image1.svg'
+      title: 'Experienced Staff'
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+    - image: '/path/to/image2.svg'
+      title: 'Own Our Equipment'
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+    - image: '/path/to/image3.svg'
+      title: 'Licensed & Insured'
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+    - image: '/path/to/image4.svg'
+      title: 'Certified Professionals'
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+    
+
+preview:
+  # Add any preview configurations here if needed
+
+_inputs:
+  title:
+    type: text
+    label: Title
+    options:
+      preview:
+        icon: 'short_text'
+        text:
+          - key: title
+          - Title
+        subtext:
+          - 'Update the section title.'
+
+  cards:
+    type: group
+    label: Cards
+    options:
+      preview:
+        icon: 'image'
+        text:
+          - 'Images and Text'
+        subtext:
+          - 'Update card images, titles, and descriptions.'
+    fields:
+      - type: image
+        label: Image
+        key: image
+        options:
+          preview:
+            icon: 'image'
+      - type: text
+        label: Title
+        key: title
+      - type: text
+        label: Description
+        key: description

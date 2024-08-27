@@ -1,0 +1,224 @@
+---
+const {title, cards} = Astro.props;
+---
+<!-- ============================================ -->
+<!--                 Why Choose                   -->
+<!-- ============================================ -->
+
+<section id="why-choose-12">
+    <div class="cs-container">
+        <div class="cs-content">
+            <div class="py-8 lg:py-16 mx-auto max-w-screen-xl px-4">
+            <h2 class="text-3xl font-bold tracking-tight leading-tight text-center text-gray-900 md:text-4xl">{title}</h2>
+            <!-- <p class="cs-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam earum rerum sunt officia quas adipisci. Nulla, dolor dignissimos qui laboriosam, asperiores aliquam soluta voluptatum, dolorem dolores minima delectus quas nam?
+            </p> -->
+        </div>
+        <ul class="cs-card-group">
+            {cards.map((card, index) => (
+                <li class="cs-item" key={index}>
+                    <div class="cs-flex">
+                        <picture class="cs-picture">
+                        <img
+                            src={card.image}
+                            alt={card.title}
+                            data-cloudcannon-field={`cards[${index}].image`}
+                            class="cs-card-image"
+                            loading="lazy"
+                            decoding="async"
+                            width="100"
+                            height="100"
+                        />
+                    </picture>
+                    <h3 class="cs-h3" data-cloudcannon-field={`cards[${index}].title`}>
+                        {card.title}
+                    </h3>
+                    <p class="cs-item-text" data-cloudcannon-field={`cards[${index}].description`}>
+                        {card.description}
+                    </p>
+                </div>
+                </li>
+            ))}
+        </ul>
+        <div class="pt-8">
+            <a href="/contact" class="cs-button-solid">Contact Us</a>
+        </div>
+    </div>
+</div>
+</section>
+<style>
+/*-- -------------------------- -->
+<---       Why Choose Us        -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #why-choose-12 {
+        /* padding: var(--sectionPadding); */
+    }
+    #why-choose-12 .cs-container {
+        width: 100%;
+        max-width: 80rem;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* 48px - 64px */
+        gap: clamp(3rem, 6vw, 4rem);
+    }
+    #why-choose-12 .cs-content {
+        /* set text align to left if content needs to be left aligned */
+        /* text-align: center; */
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        /* centers content horizontally, set to flex-start to left align */
+        align-items: center;
+    }
+    #why-choose-12 .cs-title {
+        font-size: var(--headerFontSize);
+        font-weight: 900;
+        line-height: 1.2em;
+        text-align: inherit;
+        max-width: 43.75rem;
+        margin: 0 0 1rem 0;
+        color: var(--headerColor);
+        position: relative;
+    }
+    #why-choose-12 .cs-text {
+        font-size: var(--bodyFontSize);
+        line-height: 1.5em;
+        text-align: inherit;
+        width: 100%;
+        max-width: 40.625rem;
+        margin: 0;
+        color: var(--bodyTextColor);
+    }
+    #why-choose-12 .cs-card-group {
+    width: 100%;
+    margin: 0 auto;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    /* 16px - 20px */
+    gap: clamp(1rem, 2vw, 1.25rem);
+  }
+    #why-choose-12 .cs-item {
+    text-align: left;
+    list-style: none;
+    width: 100%;
+    margin: 0 auto;
+    /* prevents padding and border from affecting height and width */
+    /* 16px - 32px */
+    padding: clamp(1rem, 4.5vw, 2rem);
+    background-color: #ebe9e9;
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    grid-column: span 12;
+    grid-row: span 1;
+    gap: 2rem;
+    position: relative;
+    z-index: 1;
+    border: 1px solid transparent;
+    transition: border-color 0.3s;
+  }
+  #why-choose-12 .cs-flex {
+    display: flex;
+    flex-direction: column;
+  }
+    #why-choose-12 .cs-picture {
+        /* 68px - 88px */
+        width: clamp(4.25rem, 7vw, 5.5rem);
+        height: clamp(4.25rem, 7vw, 5.5rem);
+        margin: auto;
+        margin-bottom: 2rem;
+        border-radius: 50%;
+        /* background-color: var(--primary); */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 0;
+    }
+    #why-choose-12 .cs-picture img {
+        width: auto;
+        height: auto;
+        display: block;
+    }
+    #why-choose-12 .cs-h3 {
+        font-size: 1.25rem;
+        line-height: 1.2em;
+        text-align: inherit;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin: 16px 0;
+        margin-bottom: 0.5rem;
+        color: var(--headerColor);
+    }
+    #why-choose-12 .cs-item-text {
+        font-size: 1rem;
+        /* text-align: center; */
+        margin-top: auto;
+        line-height: 1.5em;
+        margin: 0;
+        color: var(--bodyTextColor);
+    }
+    #why-choose-12 .cs-button-solid {
+        font-size: 1rem;
+        /* 46px - 56px */
+        line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+        text-decoration: none;
+        font-weight: 700;
+        text-align: center;
+        margin: 0;
+        color: #fff;
+        min-width: 9.375rem;
+        padding: 0 1.5rem;
+        background-color: var(--primary);
+        border-radius: 0.25rem;
+        display: inline-block;
+        position: relative;
+        z-index: 1;
+        /* prevents padding from adding to the width */
+        box-sizing: border-box;
+    }
+    #why-choose-12 .cs-button-solid:before {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 0%;
+        background: #000;
+        opacity: 1;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        border-radius: 0.25rem;
+        transition: width 0.3s;
+    }
+    #why-choose-12 .cs-button-solid:hover:before {
+        width: 100%;
+    }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+    #why-choose-12 .cs-card-group {
+       grid-template-columns: repeat(6, 1fr);
+    }
+    #why-choose-12 .cs-item {
+        grid-column: span 3;
+    }
+}
+
+/* Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+    #why-choose-12 .cs-card-group {
+        grid-template-columns: repeat(12, 1fr);
+    }
+    #why-choose-12 .cs-item {
+        grid-column: span 6;
+    }
+}
+
+                                    
+</style>                                

@@ -1,0 +1,54 @@
+# Metadata about this component, to be used in the CMS
+spec:
+  structures:
+    - content_blocks
+  label: Alberta Vision Care CTA Section
+  description: Section with a call to action for Alberta Vision Care
+  icon: 'visibility'
+  tags:
+    - CTA
+    - Vision Care
+    - Section
+
+# Defines the structure of this component, as well as the default values
+blueprint:
+  title: Alberta Vision Care CTA Section
+  fields:
+    - type: string
+      label: Topper Text
+      key: topper_text
+      default: 'Your Vision, Our Priority'
+      
+    - type: string
+      label: Title
+      key: title
+      default: 'Explore Our Services'
+      
+    - type: object
+      label: Button
+      key: button
+      fields:
+        - type: string
+          label: Button Text
+          key: text
+          default: 'Click Here'
+        - type: string
+          label: Button Link
+          key: link
+          default: 'https://example.com'
+      
+    - type: string
+      label: Medium Image URL
+      key: medium_image_url
+      default: 'https://example.com/vision-care-medium.jpg'
+      
+    - type: string
+      label: Large Image URL
+      key: large_image_url
+      default: 'https://example.com/vision-care-large.jpg'
+      
+    - type: string
+      label: Image Alt Text
+      key: image_alt_text
+      default: 'Vision care clinic with eye exam equipment'
+

@@ -1,0 +1,9 @@
+spec:
+  structures:
+    - content_blocks
+  label: Contact Form Section
+  description: A section with a contact form.
+  icon: 'mail'
+  tags:
+  - Forms
+  - Section

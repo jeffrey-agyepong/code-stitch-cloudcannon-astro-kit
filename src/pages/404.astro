@@ -1,5 +1,5 @@
 ---
-import BaseLayout from "../layouts/BaseLayout.astro";
+import Layout from "../layouts/Layout.astro";
 const props = {
   title: "404 - Not Found",
   openGraph: {
@@ -12,7 +12,7 @@ const props = {
 };
 ---
 
-<BaseLayout {...props}>
+<Layout {...props}>
   <section class="error">
     <div class="container">
       <div class="error-content">
@@ -22,7 +22,7 @@ const props = {
       </div>
     </div>
   </section>
-</BaseLayout>
+</Layout>
 
 <style>
   .error {

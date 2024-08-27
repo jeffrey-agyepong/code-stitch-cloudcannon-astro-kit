@@ -1,0 +1,28 @@
+---
+import Container from "../utility/container.astro";
+import { Picture } from "astro:assets";
+
+
+const { title, partners } = Astro.props;
+---
+
+<section class="bg-slate-100">
+    <Container>
+      <div class="py-8 lg:py-16 mx-auto max-w-screen-xl px-4">
+        <h2 class="mb-8 lg:mb-16 text-3xl font-extrabold tracking-tight leading-tight text-center text-gray-900 md:text-4xl">{title}</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-gray-500 sm:gap-12 lg:grid-cols-3 dark:text-gray-400 justify-items-center items-center">
+          {partners.map(partner => (
+            <a href={partner.link} class="flex justify-center items-center" target="_blank">
+              <Picture
+                class="w-36 hover:text-gray-900 dark:hover:text-white rounded"
+                src={partner.image}
+                alt={partner.alt}
+                width={150} 
+                height={70} 
+              />
+            </a>
+          ))}
+        </div>
+        </div>
+    </Container>
+</section>
