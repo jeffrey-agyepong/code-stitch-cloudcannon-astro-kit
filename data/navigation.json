@@ -1,0 +1,97 @@
+{
+    "header": {
+      "logo": "/images/alberta-vision-care-logo.png",
+      "logo_url": "/",
+      "background_color": "#ffffff",
+      "color": "#393939",
+      "links": [
+        {
+          "link": "/",
+          "text": "Home"
+        },
+        {
+          "link": "/about/",
+          "text": "About"
+        },
+        {
+          "link": "/frequently-asked-questions",
+          "text": "FAQs"
+        },
+        {
+          "link": "/contact/",
+          "text": "Contact"
+        },
+        {
+          "link": "/locations",
+          "text": "Locations"
+        },
+        {
+          "link": "/book-an-eye-exam/",
+          "text": "Book Appointment"
+        }
+      ]
+    },
+    "footer": {
+      "logo": "/images/alternate-logo-01.png",
+      "logo_url": "/",
+      "copyright": "Alberta Vision Care",
+      "developer": "J.A Web Design",
+      "developer_url": "https://jawebdesign.ca/",
+      "background_color": "#ffffff",
+      "color": "#2d3748",
+      "useful_links": [
+        {
+          "text": "Book An Appointment",
+          "url": "#"
+        },
+        {
+          "text": "Contact Us",
+          "url": "#"
+        },
+        {
+          "text": "About Us",
+          "url": "#"
+        },
+        {
+          "text": "Our Optometrists",
+          "url": "#"
+        }
+      ],
+      "locations": [
+        {
+          "text": "Edmonton",
+          "url": "#"
+        },
+        {
+          "text": "Sherwood Park",
+          "url": "#"
+        },
+        {
+          "text": "St. Albert",
+          "url": "#"
+        },
+        {
+          "text": "Spruce Grove",
+          "url": "#"
+        }
+      ],
+      "social": [
+        {
+          "link": "https://www.facebook.com/mycompany",
+          "social_icon": "Facebook"
+        },
+        {
+          "link": "https://www.instagram.com/mycompany",
+          "social_icon": "Instagram"
+        },
+        {
+          "link": "https://www.github.com/mycompany",
+          "social_icon": "Github"
+        },
+        {
+          "link": "https://www.youtube.com/mycompany",
+          "social_icon": "Youtube"
+        }
+      ]
+    }
+  }
